@@ -1,27 +1,12 @@
-var app = angular.module('ToDoListApp', ['ngRoute','ngResource','ui.bootstrap', 'ui.bootstrap.datetimepicker']);
+var app = angular.module('currencyConversionApp', ['ngRoute']);
 
 		app.config(function($routeProvider){
 				$routeProvider
 				.when('/',
 				{
-					controller: 'ListTasksController',
-					templateUrl: '/views/tasks.html'
+					//controller: 'ListTasksController',
+					templateUrl: '/views/conversion.html'
 				})
-				.when('/addTask',
-				{
-					controller: 'AddTasksController',
-					templateUrl: '/views/addTasks.html'
-				})
-				.when('/editTask:id',
-				{
-					controller: 'EditTasksController',
-					templateUrl: '/views/editTasks.html'
-				})
-				.when('/completedTasks',
-				{
-					controller: 'ListTasksController',
-					templateUrl: '/views/completedTasks.html'
-				})				
 				.otherwise({
 					redirectTo: '/#'
 				})

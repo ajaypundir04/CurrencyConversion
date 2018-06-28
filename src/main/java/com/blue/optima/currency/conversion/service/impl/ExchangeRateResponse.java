@@ -3,14 +3,7 @@ package com.blue.optima.currency.conversion.service.impl;
 import java.math.BigDecimal;
 import java.util.Map;
 
-/**
- * Response from the OER API containing latest or historical rates.
- * 
- * @see https://docs.openexchangerates.org/docs/latest-json
- * 
- * 
- *
- */
+
 public class ExchangeRateResponse {
 
 	private long timestamp;

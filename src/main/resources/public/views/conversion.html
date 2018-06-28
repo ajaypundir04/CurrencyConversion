@@ -7,7 +7,7 @@ body {
 	max-width: 1024px;
 }
 </style>
-</head>
+
 
 <div class="ui middle aligned relaxed centered grid">
 	<div class="center aligned column">
@@ -15,7 +15,7 @@ body {
 			<div class="content">Convert</div>
 		</h2>
 
-		<form class="ui equal width form" th:action="@{/convert}"
+		<form class="ui equal width form" th:action="@{/currencyConversion}"
 			method="POST" th:object="${convertData}">
 			<div class="fields">
 				<div class="field">
